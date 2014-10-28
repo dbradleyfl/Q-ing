@@ -1,0 +1,159 @@
+/*atomic css*/
+a:focus{
+  border: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+.move-down{
+  margin-top: 70px;
+}
+
+.logo {
+  font-family: 'Arimo', sans-serif;
+  font-weight: bolder;
+}
+
+#find-my-location-button{
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  margin: -17px 0px 0px -51px;
+}
+
+#wait_times {
+  position: fixed;
+  top: 97%;
+  left: 50%;
+  margin: -10px 0px 0px -97px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.checkbox {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 1.25em;
+}
+
+.yelp_button {
+  margin-top: 1px;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.yelp-image-container {
+  float: left;
+  margin: 5px;
+  height: 80%;
+}
+
+#stop {
+  display: none;
+}
+
+/*css from gmap example*/
+
+html, body, #map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+.controls {
+  margin-top: 16px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  padding: 0 11px 0 13px;
+  width: 700px;
+  max-width: 90%;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+  margin-left: -1px;
+  padding-left: 14px;  /* Regular padding-left + 1. */
+  width: 401px;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#target {
+  width: 345px;
+}
+
+#pac-input {
+	margin-top: 60px;
+}
+
+/*custom fixed navbar css below*/
+
+.navbar-inverse { background-color: #F2371B}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #000000}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #080000}
+.dropdown-menu { background-color: #F2371B}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #000000}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #080808}
+.navbar-inverse .navbar-brand { font-size: 35px; color: #FFFFFF}
+.navbar-inverse .navbar-brand:hover { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #FFFFFF}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #000000}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #000000}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+
+/*more customization by Devon*/
+
+@media (max-width: 767px){
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+	color: white;
+	}
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+	color: white;
+	background-color: black;
+	}
+}
+
+

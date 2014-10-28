@@ -1,0 +1,42 @@
+<div class="modal fade" id="places" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title">Filter Locations</h3>
+      </div>
+      <div class="modal-body">
+        <%= form_tag '/locations/categories' do %>
+        <div class="checkbox">
+          <label>
+            <%= check_box_tag "Places[]", "restaurant" %>
+            Restaurant
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <%= check_box_tag "Places[]", "bathroom" %>
+            Bathroom
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <%= check_box_tag "Places[]", "theater" %>
+            Theater
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <%= check_box_tag "Places[]", "attraction" %>
+            Attraction
+          </label>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <%= submit_tag "Submit", class:"btn btn-danger" %>
+            <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

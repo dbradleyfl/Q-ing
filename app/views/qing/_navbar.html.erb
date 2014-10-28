@@ -1,0 +1,38 @@
+<!-- Fixed bootstrap navbar -->
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand logo">Q-ing</a>
+		</div>
+		<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#" data-toggle="modal" data-target="#places">Places</a>
+				</li>
+				<% if session[:user_id] == nil %>
+				<li>
+					<a href="#" data-toggle="modal" data-target="#sign-in">Sign In</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="modal" data-target="#sign-up">Sign Up</a>
+				</li>
+				<% end %>
+
+				<% if session[:user_id] != nil %>
+				<li>
+					<a href="#" data-toggle="modal" id="dropPinButton" data-target="#new-location">Drop <span class="glyphicon glyphicon-pushpin"></span></a>
+				</li>
+				<li>
+					<%= link_to "Log Out", signout_path, method: :delete %>
+				</li>
+				<% end %>
+ 			</ul>
+		</nav>
+	</div>
+</header>
